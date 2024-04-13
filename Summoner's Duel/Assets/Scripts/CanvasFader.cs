@@ -7,6 +7,14 @@ public class CanvasFader : MonoBehaviour
 
   public float FadeDuration = 2.0f;
 
+  public float Alpha
+  {
+    set
+    {
+      canvasGroup.alpha = value;
+    }
+  }
+
   public void FadeIn(System.Action onComplete = null)
   {
     canvasGroup.alpha = 0;

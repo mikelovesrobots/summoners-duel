@@ -7,7 +7,7 @@ public class TitleMenuController : MonoBehaviour
 
   public void PlayGame()
   {
-    SceneChanger.ChangeScene("Gameplay");
+    SceneChanger.ChangeScene("IntroScene");
   }
 
   public void QuitGame()
