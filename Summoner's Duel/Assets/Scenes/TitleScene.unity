@@ -123,6 +123,66 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &44743275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 44743278}
+  - component: {fileID: 44743276}
+  - component: {fileID: 44743277}
+  m_Layer: 0
+  m_Name: SceneChanger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &44743276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44743275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a648e2dd8ecd48e18b2fd9a5f78c740, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanvasFader: {fileID: 44743277}
+--- !u!114 &44743277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44743275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36e21638ac6a145c3af866ec9c98b7c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 901122253}
+  FadeDuration: 1
+--- !u!4 &44743278
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44743275}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1298150789}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &67200846
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,6 +877,7 @@ Transform:
   m_Children:
   - {fileID: 255057466}
   - {fileID: 1805834048}
+  - {fileID: 44743278}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1324674464
@@ -1096,8 +1157,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1805834048}
   - component: {fileID: 1805834047}
-  - component: {fileID: 1805834049}
-  - component: {fileID: 1805834050}
   m_Layer: 0
   m_Name: Menu
   m_TagString: Untagged
@@ -1117,7 +1176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bb3e15b59d1405e93b16897baf9ab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneChanger: {fileID: 1805834049}
+  SceneChanger: {fileID: 44743276}
 --- !u!4 &1805834048
 Transform:
   m_ObjectHideFlags: 0
@@ -1133,33 +1192,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1298150789}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1805834049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1805834046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a648e2dd8ecd48e18b2fd9a5f78c740, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CanvasFader: {fileID: 1805834050}
---- !u!114 &1805834050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1805834046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36e21638ac6a145c3af866ec9c98b7c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvasGroup: {fileID: 901122253}
-  FadeDuration: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
